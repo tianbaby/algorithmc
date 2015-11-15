@@ -20,7 +20,9 @@ int main(int argc, const char * argv[]) {
         a[j]++;         //进行计数
     }
     
-    for(i=0;i<10;i++)
-        for(k=1;k<=a[i];)
+    for(i=0;i<10;i++)   //测试github
+        for(k=1;k<=a[i];k++)
+            printf("%d",i);
+            
     return 0;
 }
