@@ -11,24 +11,25 @@
 
 int main(int argc, const char * argv[]) {
     // insert code here...
+    int a[1001],n,i,t;
     
-        int a[1001],n,i,t;
-        for (i=1; i<=1000; i++)
-            a[i]=0; //初始化
+    for (i=1; i<=1000; i++)
+        a[i]=0; //初始化
         
-        scanf("%d",&n); //输入n个数
-        for (i=1;i<=n;i++)
-        {
-            scanf("%d",&t); //把每个ISBN 号读到变量t中
-            a[t]= 1;        //标记出现过的ISBN号 (强迫出现的数字都为1,这步是排重）
-        }
+    scanf("%d",&n); //输入n个数
+    
+    for (i=1;i<=n;i++)
+    {
+        scanf("%d",&t); //把每个ISBN 号读到变量t中
+        a[t]= 1;        //标记出现过的ISBN号 (强迫出现的数字都为1,这步是排重）
+    }
         
-        for(i=1;i<=1000;i++)//
-        {
-            if (a[i]==1)
-                
-                printf("%d\t",i);
-        }
+    for(i=1;i<=1000;i++)//
+    {
+        if (a[i]==1)
+            printf("%d\t",i);
+        
+    }
         
     return 0;
-    }
+}

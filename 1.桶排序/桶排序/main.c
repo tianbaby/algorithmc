@@ -10,9 +10,9 @@
 
 int main(int argc, const char * argv[]) {
     int a[11],i,j,k;
+    
     for(i=0;i<=10;i++)
         a[i]=0;         // 初始化为0
-    
     
     for(i=0;i<5;i++)
     {
